@@ -12,6 +12,7 @@ common warnings
 library
     import:           warnings
     exposed-modules:  Katas.Layer1_Fundamentals.PatternMatching
+                      Katas.Layer2_Fundamentals.Exercises
                       Katas.Layer2_Workhorse.ListLibraryDrills
                       Katas.Layer3_Toolkit.DataStructures
                       Katas.Layer4_Apex.Abstractions
@@ -37,6 +38,7 @@ test-suite haskell-katas-test
     hs-source-dirs:   test
     main-is:          Spec.hs
     other-modules:    Katas.Layer1_Fundamentals.PatternMatchingSpec
+                      Katas.Layer1_Fundamentals.ExercisesSpec
                       Katas.Layer2_Workhorse.ListLibraryDrillsSpec
                       Katas.Layer3_Toolkit.DataStructuresSpec
                       Katas.Layer4_Apex.AbstractionsSpec
