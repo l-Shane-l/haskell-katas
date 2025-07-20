@@ -26,10 +26,6 @@ The katas are organized into four progressive layers plus additional topics:
 - **Laziness** (`Laziness.hs`): Space leaks, infinite lists, lazy evaluation, and the Hamming sequence
 - **Exercises** (`Exercises.hs`): Advanced exercises including list reversal with folds, zipWith implementations, concatMap, and stream processing
 
-### Layer 3: Toolkit
-
-- **Data Structures** (`DataStructures.hs`): Choosing the right structure - when to use Map vs HashMap, List vs Vector vs Sequence, Text vs String
-
 ### Layer 4: Apex
 
 - **Abstractions** (`Abstractions.hs`): Implement Functor for a Tree type and basic IO operations
@@ -85,7 +81,6 @@ The katas are organized into four progressive layers plus additional topics:
 ### 6. If You Have Time
 
 - `Layer2_Workhorse/Laziness.hs` - Understanding evaluation
-- `Layer3_Toolkit/DataStructures.hs` - Choosing the right tool
 
 This is just one suggested path - feel free to explore in whatever order works for you!
 
@@ -144,12 +139,6 @@ cabal test
 ```
 
 This lets you focus on one module at a time by commenting out the others. Not the most elegant solution, but it works!
-
-**Tip**: You can also run tests continuously while editing:
-
-```bash
-ghcid --command="cabal repl test:haskell-katas-test" --test="main"
-```
 
 ## 📝 Project Status
 

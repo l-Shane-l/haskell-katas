@@ -18,21 +18,21 @@ library
                       Katas.Layer2_Workhorse.ListPatterns
                       Katas.Layer2_Workhorse.Laziness
                       Katas.Layer2_Workhorse.PatternMatching
-                      Katas.Layer3_Toolkit.DataStructures
                       Katas.Layer4_Apex.Abstractions
                       Katas.DataTypes.RecursiveTypes
-                      Katas.DataTypes.DataTypes
                       Katas.DataTypes.SumTypes
-                      Katas.TypeClasses.HigherKinded
-                      Katas.TypeClasses.TypeApplications
-                      Katas.TypeClasses.NewtypeInstances
-                      Katas.TypeClasses.BasicTypeClasses
+                      Katas.DataTypes.BasicTypes
+                      -- Katas.TypeClasses.HigherKinded
+                      -- Katas.TypeClasses.TypeApplications
+                      -- Katas.TypeClasses.NewtypeInstances
+                      -- Katas.TypeClasses.BasicTypeClasses
            
     build-depends:    base ^>=4.18.0.0,
                       containers,
                       unordered-containers,
                       text,
                       bytestring,
+                      hashable,
     hs-source-dirs:   src
     default-language: Haskell2010
 
@@ -56,17 +56,16 @@ test-suite haskell-katas-test
                       Katas.Layer2_Workhorse.ListLibraryDrillsSpec
                       Katas.Layer2_Workhorse.ListPatternsSpec
                       Katas.Layer2_Workhorse.ListComprehensionsSpec
-                      Katas.Layer2_Workhorse.PatternMatching
+                      Katas.Layer2_Workhorse.PatternMatchingSpec
                       Katas.Layer2_Workhorse.LazinessSpec
-                      Katas.Layer3_Toolkit.DataStructuresSpec
                       Katas.Layer4_Apex.AbstractionsSpec
                       Katas.DataTypes.BasicTypesSpec
-                      Katas.DataTypes.RecursiveTypeSpec
+                      Katas.DataTypes.RecursiveTypesSpec
                       Katas.DataTypes.SumTypesSpec
-                      Katas.TypeClasses.BasicTypeClassesSpec
-                      Katas.TypeClasses.TypeApplicationsSpec
-                      Katas.TypeClasses.HigherKindedSpec
-                      Katas.TypeClasses.NewtypeInstancesSpec
+                      -- Katas.TypeClasses.BasicTypeClassesSpec
+                      -- Katas.TypeClasses.TypeApplicationsSpec
+                      -- Katas.TypeClasses.HigherKindedSpec
+                      -- Katas.TypeClasses.NewtypeInstancesSpec
                   
     build-depends:
         base ^>=4.18.0.0,
@@ -74,6 +73,7 @@ test-suite haskell-katas-test
         containers,
         unordered-containers,
         text,
+        hashable,
         bytestring,
         hspec ^>=2.11
     build-tool-depends:

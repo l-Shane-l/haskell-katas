@@ -73,10 +73,11 @@ spec = do
       it "handles empty list" $
         longestRun ([] :: [Int]) `shouldBe` 0
 
+    -- UPDATED TEST SUITE
     describe "interleave" $ do
       it "interleaves equal length lists" $
-        interleave [1, 2, 3] ['a', 'b', 'c'] `shouldBe` [1, 'a', 2, 'b', 3, 'c']
+        interleave [1, 2, 3] [4, 5, 6] `shouldBe` [1, 4, 2, 5, 3, 6]
       it "handles different lengths" $
-        interleave [1, 2, 3] ['a', 'b', 'c', 'd', 'e'] `shouldBe` [1, 'a', 2, 'b', 3, 'c']
+        interleave [1, 2, 3] [4, 5, 6, 7, 8] `shouldBe` [1, 4, 2, 5, 3, 6]
       it "handles empty lists" $
-        interleave [] [1, 2, 3] `shouldBe` ([] :: [Int])
+        interleave [] [1, 2, 3] `shouldBe` [1, 2, 3]

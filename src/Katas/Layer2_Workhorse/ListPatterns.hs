@@ -56,8 +56,10 @@ longestRun [1,1,2,2,2,3,3,3,3,2,2] = 4 (four 3s in a row)
 longestRun :: (Eq a) => [a] -> Int
 longestRun = undefined
 
+-- UPDATED KATA DEFINITION
+
 {- | Interleave two lists
-interleave [1,2,3] ['a','b','c','d'] = [1,'a',2,'b',3,'c']
+interleave [1,2,3] [4,5,6,7] = [1,4,2,5,3,6]
 -}
 interleave :: [a] -> [a] -> [a]
 interleave = undefined

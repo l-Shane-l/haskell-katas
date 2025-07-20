@@ -1,3 +1,5 @@
+{-# LANGUAGE FlexibleInstances #-}
+
 module Katas.TypeClasses.BasicTypeClasses where
 
 -- | Create a type class for things that can be "reversed"

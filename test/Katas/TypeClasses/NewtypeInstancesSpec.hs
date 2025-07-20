@@ -1,3 +1,6 @@
+{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE TypeOperators #-}
+
 module Katas.TypeClasses.NewtypeInstancesSpec (spec) where
 
 import Katas.TypeClasses.NewtypeInstances
@@ -47,11 +50,9 @@ spec = do
       dollars 5 * dollars 3 `shouldBe` dollars 15
 
     it "creates from integer (as dollars)" $
-      42 ::
-      USD `shouldBe` dollars 42
+      (42 :: USD) `shouldBe` dollars 42
 
     it "shows as dollars" $ do
       showDollars (dollars 5) `shouldBe` "$5.00"
       showDollars (USD 550) `shouldBe` "$5.50"
       showDollars (USD 42) `shouldBe` "$0.42"
-
