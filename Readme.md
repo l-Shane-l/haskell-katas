@@ -1,6 +1,6 @@
 # Haskell Katas 🏋️‍♂️
 
-## !!! A heavy work-in-progress/experimental project warning  !!! ##
+## !!! A heavy work-in-progress/experimental project warning ##
 
 ### NOTE: Please be aware this is a brand new effort, most of the Katas are AI generated and a lot have not even been used or tested ###
 
@@ -24,6 +24,7 @@ The katas are organized into four progressive layers plus additional topics:
 - **List Patterns** (`ListPatterns.hs`): Common patterns like run-length encoding, chunking, frequency counting, and interleaving
 - **Pattern Matching** (`PatternMatching.hs`): Advanced patterns with guards, as-patterns, nested patterns, and case expressions
 - **Laziness** (`Laziness.hs`): Space leaks, infinite lists, lazy evaluation, and the Hamming sequence
+- **Exercises** (`Exercises.hs`): Advanced exercises including list reversal with folds, zipWith implementations, concatMap, and stream processing
 
 ### Layer 3: Toolkit
 
@@ -39,14 +40,18 @@ The katas are organized into four progressive layers plus additional topics:
 - **Sum Types** (`SumTypes.hs`): Enums, sum of products, pattern matching on custom types
 - **Recursive Types** (`RecursiveTypes.hs`): Binary trees, expression evaluators, tree traversals
 
+### IO
+
+- **Basic IO** (`BasicIO.hs`): User input/output, combining IO actions, fmap with IO
+- **File IO** (`FileIO.hs`): Reading and writing files, handling file errors, lazy IO pitfalls
+- **IO Combinators** (`IOCombinators.hs`): Implementing when, sequence, mapM, and the bind operator from scratch
+
 ### Type Classes
 
 - **Basic Type Classes** (`BasicTypeClasses.hs`): Creating your own type classes (Reversible, Default)
 - **Higher Kinded** (`HigherKinded.hs`): Type classes for type constructors (Compress, Filterable)
 - **Newtype Instances** (`NewtypeInstances.hs`): Smart constructors, custom Num instances, validation
-- **Type Applications** (`TypeApplications.hs`): Using TypeApplications extension for explicit type passing## 🚀 Getting Started
-
-### Prerequisites
+- **Type Applications** (`TypeApplications.hs`): Using TypeApplications extension for explicit type passing### Prerequisites
 
 - GHC 9.2+ and Cabal 3.0+
 - Or Stack (if you prefer)
