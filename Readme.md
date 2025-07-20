@@ -162,7 +162,7 @@ This is an early experiment in creating effective Haskell practice materials. Th
 
 ## Nix support
 
-Normally I provide nix flakes with my haskell project, but this is the first I've created on a macbook, because of the limited space I have on this laptop I run nix on it. So In the future I will likely add a flake but if anyone else would like to do that in the mean time I would be very grateful.
+Normally I provide nix flakes with my Haskell project, but this is the first I've created on a macbook, because of the limited space I have on this laptop I run nix on it. So In the future I will likely add a flake but if anyone else would like to do that in the mean time I would be very grateful.
 
 ## 🔗 Resources
 
