@@ -24,7 +24,6 @@ The katas are organized into four progressive layers plus additional topics:
 - **List Patterns** (`ListPatterns.hs`): Common patterns like run-length encoding, chunking, frequency counting, and interleaving
 - **Pattern Matching** (`PatternMatching.hs`): Advanced patterns with guards, as-patterns, nested patterns, and case expressions
 - **Laziness** (`Laziness.hs`): Space leaks, infinite lists, lazy evaluation, and the Hamming sequence
-- **Exercises** (`Exercises.hs`): Advanced exercises including list reversal with folds, zipWith implementations, concatMap, and stream processing
 
 ### Layer 3: Toolkit
 
@@ -40,18 +39,52 @@ The katas are organized into four progressive layers plus additional topics:
 - **Sum Types** (`SumTypes.hs`): Enums, sum of products, pattern matching on custom types
 - **Recursive Types** (`RecursiveTypes.hs`): Binary trees, expression evaluators, tree traversals
 
-### IO
-
-- **Basic IO** (`BasicIO.hs`): User input/output, combining IO actions, fmap with IO
-- **File IO** (`FileIO.hs`): Reading and writing files, handling file errors, lazy IO pitfalls
-- **IO Combinators** (`IOCombinators.hs`): Implementing when, sequence, mapM, and the bind operator from scratch
-
 ### Type Classes
 
 - **Basic Type Classes** (`BasicTypeClasses.hs`): Creating your own type classes (Reversible, Default)
 - **Higher Kinded** (`HigherKinded.hs`): Type classes for type constructors (Compress, Filterable)
 - **Newtype Instances** (`NewtypeInstances.hs`): Smart constructors, custom Num instances, validation
-- **Type Applications** (`TypeApplications.hs`): Using TypeApplications extension for explicit type passing### Prerequisites
+- **Type Applications** (`TypeApplications.hs`): Using TypeApplications extension for explicit type passing## 🚀 Getting Started
+
+Here's one possible path through the katas based on building skills progressively:
+
+## 📖 Recommended Learning Path
+
+### 1. Start with the Fundamentals
+
+- `Layer1_Fundamentals/PatternMatching.hs` - All exercises
+- `Layer1_Fundamentals/Exercises.hs` - Try `factorial`, `fibonacci`, `sumTo`
+- `Layer2_Workhorse/ListLibraryDrills.hs` - These functions come up frequently
+
+### 2. Deepen Pattern Matching Skills
+
+- `Layer2_Workhorse/PatternMatching.hs` - Work through all levels
+  - Many find this the most valuable file for building intuition
+
+### 3. List Operations
+
+- `Layer2_Workhorse/ListPatterns.hs` - All 10 functions
+- `Layer2_Workhorse/ListComprehensions.hs` - At least Levels 1-4
+
+### 4. Understanding Data Types
+
+- `DataTypes/BasicTypes.hs` - All exercises
+- `DataTypes/SumTypes.hs` - All exercises
+- `DataTypes/RecursiveTypes.hs` - All exercises
+
+### 5. Type Classes Basics
+
+- `TypeClasses/BasicTypeClasses.hs` - Try `Reversible` and `Default` classes
+- `TypeClasses/NewtypeInstances.hs` - Look at the `Num` instance for USD
+
+### 6. If You Have Time
+
+- `Layer2_Workhorse/Laziness.hs` - Understanding evaluation
+- `Layer3_Toolkit/DataStructures.hs` - Choosing the right tool
+
+This is just one suggested path - feel free to explore in whatever order works for you!
+
+### Prerequisites
 
 - GHC 9.2+ and Cabal 3.0+
 - Or Stack (if you prefer)
