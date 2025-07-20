@@ -1,8 +1,8 @@
 # Haskell Katas 🏋️‍♂️
 
-## A very heavy work in progress, experimental project warning ##
+## !!! A heavy work-in-progress/experimental project warning ##
 
-### Please be aware this is a brand new effort, most of the Katas are AI generated and a lot have not even been used or tested ###
+### NOTE: Please be aware this is a brand new effort, most of the Katas are AI generated and a lot have not even been used or tested ###
 
 A structured collection of Haskell exercises designed to build muscle memory and deepen understanding through deliberate practice.
 
