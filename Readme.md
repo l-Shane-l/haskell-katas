@@ -119,6 +119,10 @@ This is an early experiment in creating effective Haskell practice materials. Th
 - New hand-crafted katas based on real needs
 - Adjustments based on community feedback
 
+## Nix support
+
+Normally I provide nix flakes with my haskell project, but this is the first I've created on a macbook, because of the limited space I have on this laptop I run nix on it. So In the future I will likely add a flake but if anyone else would like to do that in the mean time I would be very grateful.
+
 ## 🔗 Resources
 
 - [Code Kata Concept](http://codekata.com/)
